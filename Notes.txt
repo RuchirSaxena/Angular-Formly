@@ -1,0 +1,7 @@
+Below packages are required to be installed to work with formly material
+========================================================================
+
+ npm i @angular/forms @ngx-formly/core --save
+ npm i @ngx-formly/material --save
+
+ 

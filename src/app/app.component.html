@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <span>Angular Formly</span>
+</mat-toolbar>
+
+<div style="margin: 25px;">
+  <form [formGroup]="contactForm"(ngSubmit)="submitForm(contactModel)" >
+    <formly-form [model]="contactModel" [fields]="contactFields" [form]="contactForm">
+      <button [disabled]="contactForm.invalid" type="submit" mat-raised-button>Submit Form</button>
+    </formly-form>
+  </form>
+</div>
+
+<div class="code">
+<h1>Model</h1>
+<pre>Contact :{{contactModel | json}}</pre>
+<pre>Form is Valid :{{ contactForm.valid ? 'Yes':'No'}}</pre>
+</div>
